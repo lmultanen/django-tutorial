@@ -20,6 +20,5 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('date/', views.my_app)
-    path("firstapp", include("firstapp.urls"))
+    path("firstapp/", include("firstapp.urls"))
 ]
