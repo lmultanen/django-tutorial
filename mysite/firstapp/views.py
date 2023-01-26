@@ -3,6 +3,9 @@ import datetime
 from django.http import HttpResponse
 
 # Create your views here.
+def index(request):
+    return render(request, 'firstapp/index.html')
+
 def current_time(request):
     time = datetime.datetime.now()
     response = "<h1> The current time is " + str(time) + "</h1>"
